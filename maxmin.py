@@ -48,6 +48,7 @@ def mode():
         if v1 > modevalue:
             modevalue = v1
             modekey=key
+    print(numbercnt)
     return modekey
 print(mode())
         
