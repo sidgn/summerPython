@@ -1,4 +1,3 @@
-from posix import times
 lst1 = [2,5,23,5,3,5,1,29,12]
 x = None
 def max():
@@ -34,7 +33,6 @@ def median():
     return med
 def mode():
     numbercnt = dict()
-    times = []
     for i in lst1:
         if i in numbercnt:
             numbercnt[i] += 1
@@ -48,7 +46,6 @@ def mode():
         if v1 > modevalue:
             modevalue = v1
             modekey=key
-    print(numbercnt)
     return modekey
 print(mode())
         
